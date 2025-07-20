@@ -24,23 +24,3 @@ Em cenários onde o GPS esteja inacessível, bloqueado ou comprometido, o app at
 
 O app injeta essa localização simulada no sistema via mock location para que outros apps (como Uber, Google Maps etc.) continuem funcionando normalmente.
 
----
-
-## 🚀 MVP - Objetivo da Primeira Versão
-
-- [x] Detectar ausência de GPS real
-- [x] Estimar posição via Wi-Fi + torres
-- [x] Ativar mock location com base estimada
-- [x] Interface simples com botão "Ativar Aymoré"
-- [ ] Visualizar posição em mapa (Google Maps SDK ou MapLibre)
-- [ ] Feedback visual: “localização real” vs “simulada”
-
----
-
-## 🧰 Tecnologias
-
-- Android SDK 33+
-- Kotlin (preferencialmente)
-- Sensores Android: `SensorManager`, `WifiManager`, `TelephonyManager`
-- Sistema de Mock Location Provider
-- (Opcional) Google Maps SDK / MapLibre
